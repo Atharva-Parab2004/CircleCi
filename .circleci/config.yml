@@ -7,8 +7,8 @@ jobs:
     steps:
       - checkout
       - run:
-          name: Run Prime Check Script
-          command: python prime.py 15  # You can replace 15 with any number you want to check
+          name: Run Main Script
+          command: python Main1.py
 
   test:
     docker:
@@ -17,9 +17,10 @@ jobs:
       - checkout
       - run:
           name: Run Tests
-          command: python Test.py
+          command: python test.py
 
 workflows:
+  version: 2
   build_and_test:
     jobs:
       - build
