@@ -8,7 +8,7 @@ jobs:
       - checkout
       - run:
           name: Run test
-          command: python test.py
+          command: python Test.py  
 
 workflows:
   version: 2
